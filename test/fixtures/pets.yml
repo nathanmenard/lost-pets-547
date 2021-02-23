@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: MyString
+  age: 1
+  color: MyString
+  found_date: 2021-02-23
+  found_location: MyString
+  adopted: false
+
+two:
+  species: MyString
+  age: 1
+  color: MyString
+  found_date: 2021-02-23
+  found_location: MyString
+  adopted: false
