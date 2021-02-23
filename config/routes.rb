@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   post "pets", to: "pets#create"
   # resources :pets, only: [:new, :create]
 
+  # Index
   get "pets", to: "pets#index"
+
+  # Show
+  get "pets/:id", to: "pets#show", as: :pet
 end

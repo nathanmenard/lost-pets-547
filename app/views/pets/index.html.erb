@@ -1,7 +1,11 @@
-<h1>All pets</h1>
+<div class="container">
+  <h1>All pets</h1>
+  <%= link_to "New pet", new_pet_path, class: "btn btn-primary" %>
 
-<ul>
-  <% @pets.each do |pet| %>
-    <li><%= pet.species %></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @pets.each do |pet| %>
+      <li><%= link_to pet.species, pet_path(pet) %></li>
+    <% end %>
+  </ul>
+
+</div>
